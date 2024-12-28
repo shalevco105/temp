@@ -10,6 +10,8 @@ const performAction = () => {
 cron.schedule('0 22 * * *', performAction); 
 cron.schedule('0 16 * * *', performAction); 
 cron.schedule('0 20 * * *', performAction); 
+cron.schedule('9 13 * * *', performAction); 
+cron.schedule('8 13 * * *', performAction); 
 
 app.get('/', (req, res) => {
   res.send('I am alive');
