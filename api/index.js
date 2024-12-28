@@ -21,7 +21,6 @@ cron.schedule("0 22 * * *", performAction);
 cron.schedule("0 16 * * *", performAction);
 cron.schedule("0 20 * * *", performAction);
 
-setInterval(performAction, 10000); 
 
 app.get("/", (req, res) => {
   res.send("I am alive");
