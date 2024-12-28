@@ -1,4 +1,4 @@
-const cron = require("node-cron");
+// const cron = require("node-cron");
 const axios = require("axios");
 const express = require("express");
 const app = express();
@@ -17,10 +17,10 @@ const performAction = () => {
   console.log("Action executed at:", new Date().toISOString());
 };
 
-cron.schedule("0 22 * * *", performAction);
-cron.schedule("0 16 * * *", performAction);
-cron.schedule("0 20 * * *", performAction);
-setInterval(performAction, 10000);
+// cron.schedule("0 22 * * *", performAction);
+// cron.schedule("0 16 * * *", performAction);
+// cron.schedule("0 20 * * *", performAction);
+// setInterval(performAction, 10000);
 
 app.get("/", (req, res) => {
   res.send(
